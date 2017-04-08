@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Cães Guia</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+    </head>
+    
+<!-- ***** Tela inicial ***** -->
+    <div id="tela_inicial">
+        <div id="in_body">
+            <div id="in_header">
+                <p id="nome_cao"></p>
+                <button class="btn_sair" id="btn_sair">
+                    Sair
+                    <span class="fa fa-sign-out" aria-hidden="true"></span> 
+                </button>
+            </div>
+            <div id="sinal_gps">
+                <p id="mensagem_gps">Problemas na identificação do GPS</p>   
+            </div>
+            <div id="in_main">
+                
+            </div>
+            <div id="in_footer">
+                <button id="btn_passeio"> Iniciar passeio </button>
+            </div>
+        </div>
+    </div>
+
+<!-- ***** Tela cães ***** -->
+    <div id="tela_caes" class="window">
+        <div id="tc_body">
+            <div id="tc_header">
+                <p id="nome_cao">Lista de cães</p>
+            </div>
+            <div id="tc_main">
+            </div>
+            <div id="tc_footer">
+                <button class="btn_adicionar" id="btn_adicionar">
+                    Outro cão
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- ***** Login ***** -->
+    <div id="login_inicial" class="window">
+        <div class="login">
+            <form>
+                <div>
+                    <label>Código do Cão</label> <br>
+                    <input type="number" name="codigo">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- ***** Mapa ***** -->
+    <div id="mapa" class="window">
+        <div class="voltar">
+            <button class="btn_voltar" id="btn_voltar">
+                <span class="fa fa-undo" aria-hidden="true"></span> 
+            </button>
+        </div>
+        <div id="map">
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=*****"></script>
+        </div>
+    </div>
+
+<!-- ***** Coleta de trajetórias ***** -->
+    <div id="coleta_trajetoria" class="window">
+        <body>
+            <header>
+                <div class="observar">
+                    <button class="btn_observar" id="btn_observar">
+                        <span class="fa fa-eye" aria-hidden="true"></span> 
+                    </button>
+                </div>
+                <div class="logo">
+                    <img class="imagem" src="img/logo.png">
+                </div>    
+            </header>
+            <div class="container">
+                <div id="botao01">
+                    <button class="btn_trajetorias btn_finalizar" id="btn_finalizar">
+                        <span class="fa fa-flag-checkered" aria-hidden="true"></span> 
+                    </button>
+                    Finalizar
+                </div>
+                <div id="botao02">
+                    <button class="btn_trajetorias btn_iniciar" id="btn_iniciar">
+                        <span class="fa fa-play" aria-hidden="true"></span> 
+                    </button>
+                    <span> Iniciar</span>
+                </div>
+            </div>
+            
+            <footer></footer>
+            
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
+        </body>
+    </div> 
+</html>
